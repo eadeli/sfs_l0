@@ -1,0 +1,32 @@
+This package contains the MATLAB source codes for the penalty decomposition method for the sparse logistic regression problem developed in the paper:
+
+"Penalty Decomposition Methods for l0-norm minimization" 
+(Lu and Zhang, August 2010)
+
+To run the codes, the users should properly input data and parameters for the function PD_logreg as described below:
+
+% -----  Function:  ----- 
+%
+% function [x,obj] = PD_logreg(Z,b,Ztype,k,eps,maxit)
+%
+%------ input ------
+%
+% Z     - the n x p data matrix
+% b     - binary outcomes
+% Ztype - `SM' means Z has small or medium number of rows and/or columns; 
+%         otherwise, Z is large-scale.
+% k     - the desired cardinality (i.e., the number of nonzeros)
+% eps   - the tolerance for termination
+% maxit - the maximum of number of iterations for running code
+%
+%------ output ------
+%
+% x     - approximate sparse solution
+% obj   - objective value at x
+
+Zhaosong Lu and Yong Zhang
+Department of Mathematics
+Simon Fraser University
+BC, Canada
+
+August, 2010 

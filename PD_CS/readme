@@ -1,0 +1,36 @@
+This package contains the MATLAB source codes for the penalty decomposition method for the compressed sensing problem developed in the paper:
+
+"Penalty Decomposition Methods for l0-norm minimization" 
+(Lu and Zhang, August 2010)
+
+To run the codes, the users should properly input data and parameters for the function PD_CS as described below:
+
+% -----  Function:  ----- 
+%
+% [x,obj] = PD_CS(A,AT,Atype,b,l,u,k,eps,maxit)
+%
+%------ input ------
+%
+% A     - the n x p sample matrix or the corresponding function handle 
+% AT    - empty or the function handle for transpose of A 
+% Atype - type of the matrix A: `I' means A*A' = I;  `F' means 
+%         p > n, otherwise, p <= n.
+% b     - the n x 1 observation vector
+% l     - the lower bound on the solution
+% u     - the upper bound on the solution
+% k     - the desired cardinality (i.e., the number of nonzeros)
+% eps   - the tolerance for termination
+% maxit - the maximum of number of iterations for running code
+%
+%------ output ------
+%
+% x     - approximate sparse solution
+% obj   - objective value at x
+%
+
+Zhaosong Lu and Yong Zhang
+Department of Mathematics
+Simon Fraser University
+BC, Canada
+
+August, 2010 
